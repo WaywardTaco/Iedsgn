@@ -11,7 +11,8 @@ void State_MainMenu::stateRender(GameController* game){
         << "|_)  _     _ |_   _   _ o  _ " << endl
         << "|   _> \\// (_ | | (_) _> | _> " << endl
         << "       //                     " << endl  
-        << "__ __ __ __ __ __ __ __ __ __" << endl << endl
+        << "__ __ __ __ __ __ __ __ __ __" << endl
+        << endl
         << "[1] Start a game" << endl
         << "[2] See Instructions" << endl
         << "[3] Exit" << endl
@@ -120,6 +121,9 @@ void State_DealingCards::stateRender(GameController* game){
         << "                     _|                    " << endl
         << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << endl
+        << "[1] Start Game" << endl
+        << "[0] Cancel Setup" << endl
+        << "Enter your choice: "
         ;
     //cout << "Dealing Cards:" << endl;
 };
@@ -132,6 +136,12 @@ void State_PatientTurn::stateRender(GameController* game){
         << "|   (_|  |_ | (//_ | |  |_   _>    |  |_| |  | | " << endl
         << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << endl
+        << "[1] Use Character Action" << endl
+        << "[2] Use Room Action" << endl
+        << "[3] Use Resource" << endl
+        << "[4] Move" << endl
+        << "[5] End Turn" << endl
+        << "Enter your choice: "
         ;
     //cout << "Patient's Turn:" << endl;
 
@@ -159,6 +169,11 @@ void State_DirectorTurn::stateRender(GameController* game){
         << "|_// | |  (//_ (_  |_ (_) |    _>    |  |_| |  | | " << endl
         << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << endl
+        << "[1] Summon Monster" << endl
+        << "[2] Recover Dilemma" << endl
+        << "[3] Move Monster" << endl
+        << "[4] End Turn" << endl
+        << "Enter your choice: "
         ;
     //cout << "Director's Turn:" << endl;
 };
@@ -196,6 +211,7 @@ void State_GameOver::stateRender(GameController* game){
         << "\\_| (_| | | | (//_   \\_// \\// (//_ |  " << endl
         << "__ __ __ __ __ __ __ __ __ __ __ __" << endl
         << endl
+        << "Enter 1 To Proceed: "
         ;
     //cout << "Game Over" << endl;
 };
