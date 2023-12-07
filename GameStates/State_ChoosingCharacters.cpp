@@ -52,9 +52,9 @@ int i, j = -1;
 unsigned int numPatient = game->getPatientCount();
 
 for (i = 0; i < numPatient; i++) {
-	int numCharacters = charac.size();
+	int numCharacters = (int) charac.size();
 
-	cout << "What's your name?"; cin >> name;
+	cout << "What's your name? "; cin >> name;
 	cout << endl;
 
 	do {
