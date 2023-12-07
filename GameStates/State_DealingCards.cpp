@@ -3,7 +3,7 @@
 #include <iostream>
 
 enum State_DealingCards::stateOptions : unsigned int {
-    cancel_setup, start_game, 
+    cancel_setup = 0, start_game = 1, 
 };
 
 State_DealingCards::State_DealingCards(){};
