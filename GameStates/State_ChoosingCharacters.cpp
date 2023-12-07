@@ -48,13 +48,14 @@ charac.push_back(character);
 
 char input;
 string name;
-int i, j = 0;
+int i, j;
 unsigned int numPatient = game->getPatientCount();
 
 stateRender(game);
 
 int numCharacters = 0;
 for (i = 0; i < numPatient; i++) {
+	j = -1;
 	numCharacters = (int) charac.size();
 
 	cout << "Enter Patient " << i + 1 << "'s name: "; cin >> name;
