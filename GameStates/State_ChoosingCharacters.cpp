@@ -52,22 +52,22 @@ int i, j = -1;
 unsigned int numPatient = game->getPatientCount();
 
 for (i = 0; i < numPatient; i++) {
-	int numCharacters = charac.size();
+	int numCharacters = (int) charac.size();
 
-	cout << "What's your name?"; cin >> name;
+	cout << "What's your name? "; cin >> name;
 	cout << endl;
 
 	do {
 		if (j = numCharacters - 1) j = 0;
 		else j++;
 
-		system("CLS");
+		//system("CLS");
 
 		cout << endl << "Player " << i + 1 << endl;
-		cout << "Play as this character?" << endl;
-		cout << "(Press q to select, otherwise press any key)" << endl << endl;
-		cout << "Character: " << charac[j]->getName() << endl;
+		cout << "Play as the " << charac[j]->getName() << "?" << endl;
+		cout << "(Press q to select, otherwise press any key)" << endl
 		input = _getch();
+		cout << endl;
 
 	} while (input != 'q' && input != 'Q');
 

@@ -3,7 +3,7 @@
 #include "../GameActions/ActionsHeader.hpp"
 
 enum State_DirectorTurn::stateOptions : unsigned int {
-    filler, summon_monster, recover_dilemma, move_monster, end_turn, 
+    filler, summon_monster = 1, recover_dilemma = 2, move_monster = 3, end_turn = 4, 
 };
 
 State_DirectorTurn::State_DirectorTurn(){};
