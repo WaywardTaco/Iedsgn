@@ -16,7 +16,8 @@ state_beginning:
     // Pass the winner to the game render
     stateRender(game);
 
-    int input; std::input = _getch();
+    int input; 
+    std::cout << "Press any key: "; std::input = _getch();
 
     stateOptions
         choice = static_cast<stateOptions>(input);
