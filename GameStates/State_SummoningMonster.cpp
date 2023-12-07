@@ -3,7 +3,7 @@
 #include "StatesHeader.hpp"
 
 enum State_SummoningMonster::stateOptions : unsigned int {
-    finished_summoning
+    finished_summoning = 1
 };
 
 State_SummoningMonster::State_SummoningMonster(State* currentState){

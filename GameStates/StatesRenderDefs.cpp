@@ -28,6 +28,9 @@ void State_ShowingInstructions::stateRender(GameController* game){
         << "_|_ | | _>  |_ |  |_| (_  |_ | (_) | | _> " << endl
         << "__ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << endl
+        << "[1] Back to Main Menu" << endl
+        << "[2] Show Detailed Instructions" << endl
+        << "Enter your choice: "
         ;
     //cout << "Showing Instructions:" << endl;
 };
@@ -40,6 +43,8 @@ void State_ShowingDetailedInstructions::stateRender(GameController* game){
         << "|_// (//_  |_ (_| | | (//_ (_|   _|_ | | _>  |_ |  |_| (_  |_ | (_) | | _> " << endl
         << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << endl
+        << "[1] Back to Main Menu" << endl
+        << "Enter your choice: "
         ;
     //cout << "Showing Detailed Instructions:" << endl;
 };
@@ -80,6 +85,7 @@ void State_SummoningMonster::stateRender(GameController* game){
         << "                                   _|                              " << endl
         << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << endl
+        << "Enter 1 to Proceed: "
         ;
     //cout << "Summoning Monster:" << endl;
 
@@ -136,6 +142,9 @@ void State_PatientTurn::stateRender(GameController* game){
         << "|   (_|  |_ | (//_ | |  |_   _>    |  |_| |  | | " << endl
         << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << endl
+        << game->getTurnPatient()->getName() << "'s turn!" << endl
+        << "Character: " << game->getTurnPatient()->getCharacter()->getName() << endl
+        << "Burden: " << game->getTurnPatient()->getBurden() << endl
         << "[1] Use Character Action" << endl
         << "[2] Use Room Action" << endl
         << "[3] Use Resource" << endl

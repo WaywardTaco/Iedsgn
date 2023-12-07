@@ -3,7 +3,7 @@
 #include <iostream>
 
 enum State_ShowingDetailedInstructions::stateOptions : unsigned int {
-    back_to_main
+    back_to_main = 1
 };
 
 State_ShowingDetailedInstructions::State_ShowingDetailedInstructions(){};
