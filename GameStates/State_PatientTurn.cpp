@@ -18,6 +18,12 @@ void State_PatientTurn::stateLogic(GameController* game){
 state_beginning:
     Patient* owner = game->getTurnPatient();
 
+    if(!owner->isAlive()){
+        game->nextTurn();
+        return;
+    }
+
+
     stateRender(game);
 
     int input; std::cin >> input;
@@ -55,6 +61,7 @@ state_beginning:
 
         case end_turn:
             game->setState(new Action_DrawCard(this));
+            game->runState();
             game->nextTurn();
             break;
     }
