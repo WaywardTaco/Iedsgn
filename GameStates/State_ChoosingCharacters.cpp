@@ -48,7 +48,7 @@ charac.push_back(character);
 
 char input;
 string name;
-int i, j = -1;
+int i, j = 0;
 unsigned int numPatient = game->getPatientCount();
 
 stateRender(game);
