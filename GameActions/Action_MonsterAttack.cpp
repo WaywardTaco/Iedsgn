@@ -1,7 +1,11 @@
 
 #include "ActionsHeader.hpp"
 
-Action_MonsterAttack::Action_MonsterAttack(State* previousState) : Action(previousState) {
+Action_MonsterAttack::Action_MonsterAttack(State* previousState) : Action(
+    previousState,
+    "A Monster Attacks",
+    ""
+) {
 
 };
 
