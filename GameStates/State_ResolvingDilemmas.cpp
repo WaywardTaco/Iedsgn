@@ -35,6 +35,10 @@ state_beginning:
         std::cin.clear();
         goto state_beginning;
     }
+
+    for (int i = 0; i < game->getPatientCount(); i++){
+        game->getPatient(i)->setDoneAction(false);
+    }
     
     switch(input){
         case 1:
