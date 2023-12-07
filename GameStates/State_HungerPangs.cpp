@@ -25,7 +25,7 @@ state_beginning:
         
         cout << endl << "Patient " << i + 1 << endl
             << "Can you Eat? "
-            << "[1 - Yes | 0 - No]: " << endl;
+            << "[1 - Yes | 0 - No]: ";
 
         cin >> input; 
  
@@ -36,7 +36,7 @@ state_beginning:
             case player_fed:
                 break;
             case eating_skipped:
-                game->getPatient(i)->giveBurden(1);
+                game->getPatient(i + 1)->giveBurden(1);
                 break;
         }
     }
