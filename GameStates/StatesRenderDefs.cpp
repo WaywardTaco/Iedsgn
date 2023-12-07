@@ -6,7 +6,7 @@
 using namespace std;
 
 void State_MainMenu::stateRender(GameController* game){
-    system("CLS");
+    //system("CLS");
     cout << "__ __ __ __ __ __ __ __ __ __" << endl
     << " _                           " << endl
     << "|_)  _     _ |_   _   _ o  _ " << endl
