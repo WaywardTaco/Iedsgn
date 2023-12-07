@@ -209,7 +209,7 @@ void State_AskReplay::stateRender(GameController* game){
         << "        |         /  " << endl
         << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << endl
-        << "Replay? [0 - Yes | 1 - No]:
+        << "Replay? [0 - No | 1 - Yes]:
         ;
     //cout << "Ask to Replay:" << endl;
 };
