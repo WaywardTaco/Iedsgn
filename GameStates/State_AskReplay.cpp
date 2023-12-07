@@ -3,7 +3,7 @@
 #include <iostream>
 
 enum State_AskReplay::stateOptions : unsigned int {
-    back_to_main, replay_game
+    back_to_main = 0, replay_game = 1
 };
 
 State_AskReplay::State_AskReplay(){};
