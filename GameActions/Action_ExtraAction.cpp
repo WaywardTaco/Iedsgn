@@ -1,7 +1,7 @@
 
 #include "ActionsHeader.hpp"
 
-Action_ExtraAction::Action_ExtraAction(Action* actionType, State* previousState) : Action (
+Action_ExtraAction::Action_ExtraAction(State* previousState) : Action (
     previousState, 
     "Take an Extra Action!", 
     "You can take an extra action at the cost of one (1) Burden!"
