@@ -5,12 +5,10 @@
 #include <iostream>
 #include "Player.hpp"
 #include "Character.hpp"
-#include "Room.hpp"
 
 class Patient : public Player {
 private:
     Character* chosenCharacter;
-    Room* currentRoom;
     unsigned int burdenCount;
     bool isDead, hasTakenAction;
     
@@ -28,8 +26,6 @@ public:
     void setDoneAction(bool state);
 
     Character* getCharacter();
-    Room getRoom();
-    unsigned int getBurden();
     bool isAlive();
     bool hasDoneAction();
 };
