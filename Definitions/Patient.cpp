@@ -10,6 +10,7 @@ Patient::Patient(
     this->chosenCharacter = character;
     isDead = false;
     hasTakenAction = false;
+    burdenCount = 0;
 };
 
 Patient::~Patient(){};
