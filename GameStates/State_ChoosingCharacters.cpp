@@ -61,7 +61,7 @@ for (i = 0; i < numPatient; i++) {
 		if (j = numCharacters - 1) j = 0;
 		else j++;
 
-		system("CLS");
+		//system("CLS");
 
 		cout << endl << "Player " << i + 1 << endl;
 		cout << "Play as this character?" << endl;

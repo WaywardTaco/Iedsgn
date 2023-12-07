@@ -5,7 +5,7 @@
 using namespace std;
 
 void State_MainMenu::stateRender(GameController* game){
-    system("cls");
+    //system("CLS");
     cout << "__ __ __ __ __ __ __ __ __ __" << endl
         << " _                           " << endl
         << "|_)  _     _ |_   _   _ o  _ " << endl
@@ -16,11 +16,11 @@ void State_MainMenu::stateRender(GameController* game){
         << "[2] See Instructions" << endl
         << "[3] Exit" << endl
         << "Enter your choice: "
-        ;
+    ;
 };
 
 void State_ShowingInstructions::stateRender(GameController* game){
-    system("cls");
+    //system("CLS");
     cout << "__ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << "___                                       " << endl
         << " |  ._   _ _|_ ._      _ _|_ o  _  ._   _ " << endl
@@ -32,7 +32,7 @@ void State_ShowingInstructions::stateRender(GameController* game){
 };
 
 void State_ShowingDetailedInstructions::stateRender(GameController* game){
-    system("cls");
+    //system("CLS");
     cout << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << " _                            ___                                       " << endl
         << "| \\  _  _|_  _. o |  _   _|    |  ._   _ _|_ ._      _ _|_ o  _  ._   _ " << endl
@@ -44,7 +44,7 @@ void State_ShowingDetailedInstructions::stateRender(GameController* game){
 };
 
 void State_ExitingApp::stateRender(GameController* game){
-    system("cls");
+    //system("CLS");
     cout << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << " _                                                            " << endl
         << "|_    o _|_ o ._   _     //\\  ._  ._  | o  _  _. _|_ o  _  ._  " << endl
@@ -57,7 +57,7 @@ void State_ExitingApp::stateRender(GameController* game){
 };
 
 void State_NamingDirector::stateRender(GameController* game){
-    system("cls");
+    //system("CLS");
     cout << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << "                            _                         " << endl
         << "|\\ |  _. ._ _  o ._   _    | \\ o ._  _   _ _|_  _  ._ " << endl
@@ -71,7 +71,7 @@ void State_NamingDirector::stateRender(GameController* game){
 };
 
 void State_SummoningMonster::stateRender(GameController* game){
-    system("cls");
+    //system("CLS");
     cout << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << " __                                                                " << endl
         << "(_      ._ _  ._ _   _  ._  o ._   _    |\\//|  _  ._   _ _|_  _  ._ " << endl
@@ -85,7 +85,7 @@ void State_SummoningMonster::stateRender(GameController* game){
 };
 
 void State_CountingPlayers::stateRender(GameController* game){
-    system("cls");
+    //system("CLS");
     cout << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << "_                              _" << endl
         << "//   _      ._  _|_ o ._   _    |_) |  _.     _  ._  _ " << endl
@@ -98,7 +98,7 @@ void State_CountingPlayers::stateRender(GameController* game){
 };
 
 void State_ChoosingCharacters::stateRender(GameController* game){
-    system("cls");
+    //system("CLS");
     cout << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << " _                             _                                 " << endl
         << "//  |_   _   _   _ o ._   _    //  |_   _. ._  _.  _ _|_  _  ._  _ " << endl
@@ -112,7 +112,7 @@ void State_ChoosingCharacters::stateRender(GameController* game){
 };
 
 void State_DealingCards::stateRender(GameController* game){
-    system("cls");
+    //system("CLS");
     cout << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << " _                         _               " << endl
         << "| \\  _   _. | o ._   _    //   _. ._  _|  _ " << endl
@@ -125,7 +125,7 @@ void State_DealingCards::stateRender(GameController* game){
 };
 
 void State_PatientTurn::stateRender(GameController* game){
-    system("cls");
+    //system("CLS");
     cout << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << " _                               ___            " << endl
         << "|_)  _. _|_ o  _  ._  _|_ //  _    |      ._ ._  " << endl
@@ -138,7 +138,7 @@ void State_PatientTurn::stateRender(GameController* game){
 };
 
 void State_ResolvingDilemmas::stateRender(GameController* game){
-    system("cls");
+    //system("CLS");
     cout << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << " _                               _                             " << endl
         << "|_)  _   _  _  |    o ._   _    | \\ o |  _  ._ _  ._ _   _.  _ " << endl
@@ -152,7 +152,7 @@ void State_ResolvingDilemmas::stateRender(GameController* game){
 };
 
 void State_DirectorTurn::stateRender(GameController* game){
-    system("cls");
+    //system("CLS");
     cout << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << " _                                ___            " << endl
         << "| \\ o ._  _   _ _|_  _  ._ //  _    |      ._ ._  " << endl
@@ -164,7 +164,7 @@ void State_DirectorTurn::stateRender(GameController* game){
 };
 
 void State_HungerPangs::stateRender(GameController* game){
-    system("cls");
+    //system("CLS");
     cout << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << "                          _                 " << endl
         << "|_|     ._   _   _  ._   |_)  _. ._   _   _ " << endl
@@ -177,7 +177,7 @@ void State_HungerPangs::stateRender(GameController* game){
 };
 
 void State_RoundEnd::stateRender(GameController* game){
-    system("cls");
+    //system("CLS");
     cout << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << " _            _    _    _                  " << endl
         << "|_ ._   _|   // \\ _|_   |_)  _      ._   _| " << endl
@@ -189,7 +189,7 @@ void State_RoundEnd::stateRender(GameController* game){
 };
 
 void State_GameOver::stateRender(GameController* game){
-    system("cls");
+    //system("CLS");
     cout << "__ __ __ __ __ __ __ __ __ __ __ __" << endl
         << " __                  _            " << endl
         << "//__  _. ._ _   _    // \\     _  ._ " << endl
@@ -201,7 +201,7 @@ void State_GameOver::stateRender(GameController* game){
 };
 
 void State_AskReplay::stateRender(GameController* game){
-    system("cls");
+    //system("CLS");
     cout << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << "             ___        _                   " << endl
         << " //\\   _ |     |   _    |_)  _  ._  |  _.    " << endl
