@@ -66,8 +66,10 @@ state_beginning:
             break;
         case 7:
             game->setState(previousState);
-            break;
+            return;
     };
+
+    goto state_beginning;
 };
 
 void Action_MonsterAttack::actionEffects(GameController* game){

@@ -10,5 +10,6 @@ Action_MoveMonster::Action_MoveMonster(State* previousState) : Action (
 Action_MoveMonster::~Action_MoveMonster(){};
 
 void Action_MoveMonster::actionEffects(GameController* game){
-    // Consider calling the monster attack class
+    game->setState(new Action_MonsterAttack(this));
+    game->runState();
 };

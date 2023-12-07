@@ -14,8 +14,8 @@ void Action_VeteransAbility::actionEffects(GameController* game){
     unsigned int tempDamage = game->getMonsterDamage();
     game->setMonsterDamage(0);
 
-    //game->setState(new Action_MonsterAttacks(this));
-    //game->runState();
+    game->setState(new Action_MonsterAttack(this));
+    game->runState();
 
     game->setMonsterDamage(tempDamage);
 
