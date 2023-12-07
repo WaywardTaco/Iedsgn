@@ -210,6 +210,10 @@ void State_RoundEnd::stateRender(GameController* game){
         << "|_ | | (_|   \\_/  |    | \\ (_) |_| | | (_| " << endl
         << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << endl
+        << "Is the deck empty?" << endl
+        << "[1] Deck is not empty" << endl
+        << "[2] Deck is empty" << endl
+        << "Enter your choice: "
         ;
     //cout << "End Of Round:" << endl;
 };
