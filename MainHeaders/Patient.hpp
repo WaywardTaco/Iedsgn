@@ -25,6 +25,8 @@ public:
     void healBurden(unsigned int amount);
     void revive(unsigned int toBurdenAmt);
 
+    void setDoneAction(bool state);
+
     Character* getCharacter();
     Room getRoom();
     unsigned int getBurden();

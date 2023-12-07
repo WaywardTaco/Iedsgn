@@ -36,6 +36,10 @@ void Patient::revive(unsigned int toBurdenAmt){
     this->burdenCount = toBurdenAmt;
 };
 
+void Patient::setDoneAction(bool state){
+    this->hasTakenAction = state;
+};
+
 bool Patient::isAlive(){
     return !(this->isDead);
 };
