@@ -51,6 +51,8 @@ string name;
 int i, j = -1;
 unsigned int numPatient = game->getPatientCount();
 
+stateRender(game);
+
 for (i = 0; i < numPatient; i++) {
 	int numCharacters = (int) charac.size();
 
