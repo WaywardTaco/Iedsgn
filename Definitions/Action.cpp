@@ -32,7 +32,7 @@ void Action::stateRender(GameController* game){
     std::cout <<
         "[" << cancel_action <<"] Cancel" << std::endl <<
         "[" << finished_action << "] Finished" << std::endl <<
-        "Choice: " << std::endl
+        "Choice: "
     ;
 };
 
