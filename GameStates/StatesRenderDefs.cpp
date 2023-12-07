@@ -99,8 +99,9 @@ void State_CountingPlayers::stateRender(GameController* game){
     << "\\_ (_) |_| | |  |_ | | | (_|   |   | (_| \\/ (/_ |  _> " << endl
     << "                          _|             /            " << endl
     << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
-        << endl
-        ;
+    << endl
+    << "Enter The Number of Players: "
+    ;
     //cout << "Counting Players:" << endl;
 };
 
@@ -113,7 +114,6 @@ void State_ChoosingCharacters::stateRender(GameController* game){
         << "                         _|                                      " << endl
         << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << endl
-        << "Enter the number of players: "
         ;
     //cout << "Choosing Characters:" << endl;
 
