@@ -1,6 +1,7 @@
 
 #include "StatesHeader.hpp"
 #include <iostream>
+#include<conio.h>
 
 enum State_GameOver::stateOptions : unsigned int {
     proceed
@@ -15,8 +16,7 @@ state_beginning:
     // Pass the winner to the game render
     stateRender(game);
 
-    int input; std::cin >> input;
-    std::cin.ignore(); std::cin.clear();
+    int input; std::input = _getch();
 
     stateOptions
         choice = static_cast<stateOptions>(input);
