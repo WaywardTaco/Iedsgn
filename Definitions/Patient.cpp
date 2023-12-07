@@ -23,7 +23,7 @@ void Patient::giveBurden(unsigned int amount){
 };
 
 void Patient::healBurden(unsigned int amount){
-    if(static_cast<int>(this->burdenCount) - amount < 0)
+    if(static_cast<int>(this->burdenCount) - static_cast<int>(amount) <= 0)
         this->burdenCount = 0;
     else
         this->burdenCount -= amount;

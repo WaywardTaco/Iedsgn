@@ -48,21 +48,27 @@ state_beginning:
     switch(input){
         case 1:
             game->setState(cherub);
+            game->runState();
             break;
         case 2:
             game->setState(groom);
+            game->runState();
             break;
         case 3:
             game->setState(masses);
+            game->runState();
             break;
         case 4:
             game->setState(husk);
+            game->runState();
             break;
         case 5:
             game->setState(indulgent);
+            game->runState();
             break;
         case 6:
             game->setState(ringmaster);
+            game->runState();
             break;
         case 7:
             game->setState(previousState);
