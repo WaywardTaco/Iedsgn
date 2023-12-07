@@ -233,6 +233,15 @@ public:
 
 // Add an Action_MonsterAttack class to handle monster attacks
 
+class Action_MonsterAttack : public Action {
+public:
+    Action_MonsterAttack(State* previousState);
+    ~Action_MonsterAttack();
+    void stateRender(GameController* game);
+    void stateLogic(GameController* game);
+    void actionEffects(GameController* game);
+};
+
 class Action_TargetPatient : public Action {
 private:
     Patient* selectedPlayer;
