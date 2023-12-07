@@ -13,6 +13,6 @@ std::string Character::getName(){
     return this->characterName;
 };
 
-Action* Character::getAbility(){
+State* Character::getAbility(){
     return this->characterAbility;
 };

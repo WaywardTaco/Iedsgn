@@ -20,7 +20,7 @@ public:
     ~Character();
 
     std::string getName();
-    Action* getAbility();
+    State* getAbility();
 };
 
 #endif

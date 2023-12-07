@@ -2,6 +2,7 @@
 #include "./Definitions/State.cpp"
 #include "./Definitions/GameController.cpp"
 #include "./Definitions/Action.cpp"
+#include "./Definitions/Character.cpp"
 #include "./Definitions/Player.cpp"
 #include "./Definitions/Patient.cpp"
 
@@ -16,7 +17,7 @@
 #include "./GameActions/Action_DoResourceAction.cpp"
 #include "./GameActions/Action_DoRoomAction.cpp"
 #include "./GameActions/Action_DrawCard.cpp"
-//#include "./GameActions/Action_ExtraAction.cpp"
+#include "./GameActions/Action_ExtraAction.cpp"
 #include "./GameActions/Action_FathersAbility.cpp"
 #include "./GameActions/Action_GiveResource.cpp"
 #include "./GameActions/Action_GroomAttack.cpp"

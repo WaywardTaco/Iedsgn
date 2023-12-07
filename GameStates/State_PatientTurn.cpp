@@ -1,5 +1,7 @@
 
 #include "StatesHeader.hpp"
+#include "../GameActions/ActionsHeader.hpp"
+#include "../MainHeaders/Character.hpp"
 #include <iostream>
 
 enum State_PatientTurn::stateOptions : unsigned int {
