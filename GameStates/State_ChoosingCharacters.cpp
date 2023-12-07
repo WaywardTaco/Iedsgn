@@ -64,10 +64,10 @@ for (i = 0; i < numPatient; i++) {
 		//system("CLS");
 
 		cout << endl << "Player " << i + 1 << endl;
-		cout << "Play as this character?" << endl;
-		cout << "(Press q to select, otherwise press any key)" << endl << endl;
-		cout << "Character: " << charac[j]->getName() << endl;
+		cout << "Play as the " << charac[j]->getName() << "?" << endl;
+		cout << "(Press q to select, otherwise press any key)" << endl
 		input = _getch();
+		cout << endl;
 
 	} while (input != 'q' && input != 'Q');
 
