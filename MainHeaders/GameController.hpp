@@ -53,6 +53,8 @@ public:
     void setDirector(Director* director);
     void setPatientCount(unsigned int count);
     void setMonsterDamage(unsigned int amount);
+    
+    bool isPatientTurn();
 };
 
 #endif
