@@ -22,29 +22,29 @@ state_beginning:
 
 vector<Character> charac;
 
-Action* ability = new Action_DebtCollectorsAbility(*(game->getCurrentState()));
+Action* ability = new Action_DebtCollectorsAbility(game->getCurrentState());
 Character character = new Character("Debt Collector", ability);
-charac->push_back(character);
+charac.push_back(character);
 
-ability = new Action_FathersAbility(*(game->getCurrentState()));
+ability = new Action_FathersAbility(game->getCurrentState());
 character = new Character("Father", ability);
-charac->push_back(character);
+charac.push_back(character);
 
-ability = new Action_JournalistsAbility(*(game->getCurrentState()));
+ability = new Action_JournalistsAbility(game->getCurrentState());
 character = new Character("Journalist", ability);
-charac->push_back(character);
+charac.push_back(character);
 
-ability = new Action_PastorsAbility(*(game->getCurrentState()));
+ability = new Action_PastorsAbility(game->getCurrentState());
 character = new Character("Pastor", ability);
-charac->push_back(character);
+charac.push_back(character);
 
-ability = new Action_StudentsAbility(*(game->getCurrentState()));
+ability = new Action_StudentsAbility(game->getCurrentState());
 character = new Character("Student", ability);
-charac->push_back(character);
+charac.push_back(character);
 
-ability = new Action_VeteransAbility(*(game->getCurrentState()));
+ability = new Action_VeteransAbility(game->getCurrentState());
 character = new Character("Veteran", ability);
-charac->push_back(character);
+charac.push_back(character);
 
 char input;
 string name;
@@ -52,7 +52,7 @@ int i, j = -1;
 unsigned int numPatient = game->getPatientCount();
 
 for (i = 0; i < numPatient; i++) {
-	int numCharacters = charac->getsize();
+	int numCharacters = charac.getsize();
 
 	cout << "What's your name?"; cin >> name;
 	cout << endl;
@@ -66,15 +66,15 @@ for (i = 0; i < numPatient; i++) {
 		cout << endl << "Player " << i + 1 << endl;
 		cout << "Play as this character?" << endl;
 		cout << "(Press q to select, otherwise press any key)" << endl << endl;
-		cout << "Character: " << charac[j]->getName() << endl;
+		cout << "Character: " << charac[j].getName() << endl;
 		input = _getch();
 
 	} while (input != 'q' && input != 'Q');
 
-	Patient* patient = new Patient(name, characters[j]);
+	Patient* patient = new Patient(name, charac[j]);
 	game->pushPatient(patient);
 
-	charac->erase(j);
+	charac.erase(j);
 }
     
     game->setState(new State_DealingCards());
