@@ -221,7 +221,6 @@ void State_GameOver::stateRender(GameController* game){
         << "\_| (_| | | | (/_   \_/ \/ (/_ |  " << endl
         << "__ __ __ __ __ __ __ __ __ __ __ __" << endl
         << endl
-        << "Enter Any Key To Proceed: "
         ;
     //cout << "Game Over" << endl;
 };
