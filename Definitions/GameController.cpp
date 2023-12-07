@@ -112,6 +112,9 @@ void GameController::setMonsterDamage(unsigned int amount){
     this->monsterDamage = amount;
 };
 
+bool GameController::isPatientTurn(){
+    return current_turn > 0 || current_turn <= patient_count;
+};
 
 /*
 private:
