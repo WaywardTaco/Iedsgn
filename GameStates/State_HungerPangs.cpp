@@ -24,7 +24,7 @@ state_beginning:
         int input; 
         
         cout << endl << "Patient " << i + 1 << endl
-            << "Can you Eat?";
+            << "Can you Eat?"
             << "[1 - Yes | 0 - No]: " << endl;
 
         cin >> input; 
