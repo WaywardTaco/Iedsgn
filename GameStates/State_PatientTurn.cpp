@@ -5,7 +5,7 @@
 #include <iostream>
 
 enum State_PatientTurn::stateOptions : unsigned int {
-    filler, take_character_action, take_room_action, take_resource_action, move, end_turn, 
+    filler, take_character_action = 1, take_room_action = 2, take_resource_action = 3, move = 4, end_turn = 5 
 };
 
 State_PatientTurn::State_PatientTurn(Patient* turnOwner){
