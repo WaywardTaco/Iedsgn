@@ -19,4 +19,6 @@ void Action_FathersAbility::actionEffects(GameController* game){
 
     target->healBurden(2);
 
+    game->getTurnPatient()->setDoneAction(true);
+
 };

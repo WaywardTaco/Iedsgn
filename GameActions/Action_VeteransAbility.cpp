@@ -19,4 +19,6 @@ void Action_VeteransAbility::actionEffects(GameController* game){
 
     game->setMonsterDamage(tempDamage);
 
+    game->getTurnPatient()->setDoneAction(true);
+
 };

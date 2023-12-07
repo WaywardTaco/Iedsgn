@@ -11,4 +11,6 @@ Action_JournalistsAbility::~Action_JournalistsAbility(){};
 
 void Action_JournalistsAbility::actionEffects(GameController* game){
     //Empty on Purpose
+
+    game->getTurnPatient()->setDoneAction(true);
 };

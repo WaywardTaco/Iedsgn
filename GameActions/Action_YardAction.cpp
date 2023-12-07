@@ -11,4 +11,6 @@ Action_YardAction::~Action_YardAction(){};
 
 void Action_YardAction::actionEffects(GameController* game){
     //Empty on Purpose
+
+    game->getTurnPatient()->setDoneAction(true);
 };

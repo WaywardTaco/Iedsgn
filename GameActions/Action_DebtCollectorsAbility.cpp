@@ -11,4 +11,5 @@ Action_DebtCollectorsAbility::~Action_DebtCollectorsAbility(){};
 
 void Action_DebtCollectorsAbility::actionEffects(GameController* game){
     //Empty on Purpose
+    game->getTurnPatient()->setDoneAction(true);
 };

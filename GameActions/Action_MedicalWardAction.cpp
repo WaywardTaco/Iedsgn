@@ -20,4 +20,6 @@ void Action_MedicalWardAction::actionEffects(GameController* game){
 
     target->healBurden(2);
 
+    game->getTurnPatient()->setDoneAction(true);
+
 };

@@ -11,4 +11,6 @@ Action_StudentsAbility::~Action_StudentsAbility(){};
 
 void Action_StudentsAbility::actionEffects(GameController* game){
     //Empty on Purpose
+
+    game->getTurnPatient()->setDoneAction(true);
 };

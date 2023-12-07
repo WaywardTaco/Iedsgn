@@ -11,4 +11,7 @@ Action_SecurityRoomAction::~Action_SecurityRoomAction(){};
 
 void Action_SecurityRoomAction::actionEffects(GameController* game){
     //Empty on Purpose
+
+    
+    game->getTurnPatient()->setDoneAction(true);
 };

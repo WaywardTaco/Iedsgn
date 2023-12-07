@@ -19,9 +19,6 @@ void Action_MassesAttack::actionEffects(GameController* game){
     Patient* victim = targeting->getSelected();
 
     victim->giveBurden(game->getMonsterDamage());
-
-    // Change this to Action_StallPatient()
-    game->setState(new Action_RecoverDilemma(this, false));
-    game->runState();
+    victim->setDoneAction(true);
     
 };

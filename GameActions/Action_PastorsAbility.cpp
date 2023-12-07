@@ -11,4 +11,6 @@ Action_PastorsAbility::~Action_PastorsAbility(){};
 
 void Action_PastorsAbility::actionEffects(GameController* game){
     //Empty on Purpose
+
+    game->getTurnPatient()->setDoneAction(true);
 };
