@@ -53,8 +53,9 @@ unsigned int numPatient = game->getPatientCount();
 
 stateRender(game);
 
+int numCharacters = 0;
 for (i = 0; i < numPatient; i++) {
-	int numCharacters = (int) charac.size();
+	numCharacters = (int) charac.size();
 
 	cout << "Enter Patient " << i + 1 << "'s name: "; cin >> name;
 	cout << endl;
