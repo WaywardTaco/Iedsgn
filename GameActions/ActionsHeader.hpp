@@ -218,7 +218,7 @@ public:
 
 class Action_ExtraAction : public Action {
 public:
-    Action_ExtraAction(Action* actionType, State* previousState);
+    Action_ExtraAction(State* previousState);
     ~Action_ExtraAction();
     void actionEffects(GameController* game);
 };
