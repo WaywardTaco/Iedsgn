@@ -1,6 +1,10 @@
 
 
 #include "StatesHeader.hpp"
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
 
 enum State_HungerPangs::stateOptions : unsigned int {
     eating_skipped = 0, player_fed = 1,
@@ -17,8 +21,13 @@ state_beginning:
     // Process eating per player, deal burden accordingly
 
     for(int i = 0; i < numPatient; i++) {
-        int input; std::cout << "Can you Eat? "; std::cin >> input; 
-        cout << endl;
+        int input; 
+        
+        cout << endl << "Patient " << i + 1 << endl
+            << "Can you Eat?";
+            << "[1 - Yes | 0 - No]: " << endl;
+
+        cin >> input; 
  
         stateOptions
             choice = static_cast<stateOptions>(input);
