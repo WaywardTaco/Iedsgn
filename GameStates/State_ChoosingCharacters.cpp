@@ -65,7 +65,7 @@ for (i = 0; i < numPatient; i++) {
 
 		cout << endl << "Player " << i + 1 << endl;
 		cout << "Play as the " << charac[j]->getName() << "?" << endl;
-		cout << "(Press q to select, otherwise press any key)" << endl
+		cout << "(Press q to select, otherwise press any key)" << endl;
 		input = _getch();
 		cout << endl;
 
