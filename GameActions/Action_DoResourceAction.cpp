@@ -1,6 +1,6 @@
 
 #include "ActionsHeader.hpp"
-#include "GameController.hpp"
+#include "../MainHeaders/GameController.hpp"
 
 Action_DoResourceAction::Action_DoResourceAction(State* previousState) : Action (
     previousState, 

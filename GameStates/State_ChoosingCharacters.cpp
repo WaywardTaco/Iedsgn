@@ -5,7 +5,7 @@
 #include<conio.h> /*_getch();*/
 #include<vector>
 
-#include"Characters.hpp"
+#include "../MainHeaders/Character.hpp"
 
 using namespace std;
 

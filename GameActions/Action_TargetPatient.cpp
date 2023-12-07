@@ -1,6 +1,6 @@
 
 #include "ActionsHeader.hpp"
-#include "GameController.hpp"
+#include "../MainHeaders/GameController.hpp"
 
 Action_TargetPatient::Action_TargetPatient(State* previousState) : Action (
     previousState, 

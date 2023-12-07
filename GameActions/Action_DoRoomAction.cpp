@@ -1,6 +1,6 @@
 
 #include "ActionsHeader.hpp"
-#include "GameController.hpp"
+#include "../MainHeaders/GameController.hpp"
 
 Action_DoRoomAction::Action_DoRoomAction(State* previousState) : Action (
     previousState, 
