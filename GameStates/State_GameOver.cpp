@@ -20,13 +20,6 @@ state_beginning:
 
     cout << "Press any key: ";
     int input = _getch();
-
-    stateOptions
-        choice = static_cast<stateOptions>(input);
-
-    switch(choice){
-        case proceed:
-            game->setState(new State_AskReplay());
-    }
     
+    game->setState(new State_AskReplay());
 };
