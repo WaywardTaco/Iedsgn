@@ -8,4 +8,4 @@ int main(){
     game.runApplication();
 
     return 0;
-}
+};
