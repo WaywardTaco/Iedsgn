@@ -39,6 +39,9 @@ public:
     void directorWin();
     void patientsWin();
 
+    void pushPatient(Patient* patient);
+    void clearPatients();
+
     Patient* getPatient(unsigned int player_number);
     Patient* getTurnPatient();
     unsigned int getPatientCount();

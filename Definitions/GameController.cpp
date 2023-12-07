@@ -57,6 +57,14 @@ void GameController::patientsWin(){
     this->setState(new State_GameOver());
 };
 
+void GameController::pushPatient(Patient* patient){
+    this->patients.push_back(patient);
+};
+
+void GameController::clearPatients(){
+    this->patients.clear();
+};
+
 Patient* GameController::getPatient(unsigned int player_number){
     if(player_number > this->patient_count || player_number == 0 || player_number > patients.size())
         return NULL;
