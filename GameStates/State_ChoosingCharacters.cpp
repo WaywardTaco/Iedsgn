@@ -76,6 +76,6 @@ for (i = 0; i < numPatient; i++) {
 
 	charac.erase(charac.begin() + j);
 }
-    
+
     game->setState(new State_DealingCards());
 };
