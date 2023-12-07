@@ -8,14 +8,16 @@ enum State_PatientTurn::stateOptions : unsigned int {
     filler, take_character_action = 1, take_room_action = 2, take_resource_action = 3, move = 4, end_turn = 5 
 };
 
-State_PatientTurn::State_PatientTurn(Patient* turnOwner){
-    this->owner = turnOwner;
+State_PatientTurn::State_PatientTurn(){
+
 };
 
 State_PatientTurn::~State_PatientTurn(){};
 
 void State_PatientTurn::stateLogic(GameController* game){
 state_beginning:
+    Patient* owner = game->getTurnPatient();
+
     stateRender(game);
 
     int input; std::cin >> input;

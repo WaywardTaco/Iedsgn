@@ -102,10 +102,9 @@ public:
 class State_PatientTurn : public State {
 private:
     enum stateOptions : unsigned int;
-    Patient* owner;
 
 public:
-    State_PatientTurn(Patient* turnOwner);
+    State_PatientTurn();
     ~State_PatientTurn();
     void stateLogic(GameController* game);
     void stateRender(GameController* game);

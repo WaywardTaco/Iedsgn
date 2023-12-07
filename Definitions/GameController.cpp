@@ -33,13 +33,13 @@ void GameController::runState(){
 void GameController::nextTurn(){
     if(current_turn == director_turn){
         this->current_turn = patient_1_turn;
-        this->setState(new State_PatientTurn(getPatient(current_turn)));
+        this->setState(new State_PatientTurn());
     } else if (current_turn == patient_count){
         this->current_turn = director_turn;
         this->setState(new State_ResolvingDilemmas());
     } else {
         this->current_turn = static_cast<Turns>(current_turn + 1);
-        this->setState(new State_PatientTurn(getPatient(current_turn)));
+        this->setState(new State_PatientTurn());
     }
 };
 

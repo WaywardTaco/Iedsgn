@@ -2,7 +2,7 @@
 #include "ActionsHeader.hpp"
 
 Action_PastorsAbility::Action_PastorsAbility(State* previousState) : Action (
-    previousState, 
+    new State_PatientTurn(), 
     "Use your glorious blessing to dispel evil!", 
     "Discard a resource, if you do, discard one of any Player's Dilemmas"
 ) {};

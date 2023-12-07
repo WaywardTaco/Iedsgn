@@ -2,7 +2,7 @@
 #include "ActionsHeader.hpp"
 
 Action_StudentsAbility::Action_StudentsAbility(State* previousState) : Action (
-    previousState, 
+    new State_PatientTurn(), 
     "Consider all possibilities and change your future!", 
     "Look at the top 5 cards of the deck, then put them back on top in any order"
 ) {};

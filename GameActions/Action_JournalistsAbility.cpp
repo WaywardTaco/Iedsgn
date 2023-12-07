@@ -2,7 +2,7 @@
 #include "ActionsHeader.hpp"
 
 Action_JournalistsAbility::Action_JournalistsAbility(State* previousState) : Action (
-    previousState, 
+    new State_PatientTurn(), 
     "Lure the horrors and make a new headline!", 
     "Move a monster to your Room/Tile, it cannot attack you this round"
 ) {};

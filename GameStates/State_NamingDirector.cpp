@@ -11,12 +11,6 @@ State_NamingDirector::State_NamingDirector(){};
 State_NamingDirector::~State_NamingDirector(){};
 
 void State_NamingDirector::stateLogic(GameController* game){
-    if(!namedDirector)
-        goto state_beginning;
-    
-    game->setState(new State_CountingPlayers());
-    return;
-
 state_beginning:
     stateRender(game);
 
@@ -27,5 +21,6 @@ state_beginning:
     game->setDirector(new Director(input_name));
     this->namedDirector = true;
     
-    game->setState(new State_SummoningMonster(this));
+    game->setState(new State_CountingPlayers());
+    //game->setState(new State_SummoningMonster(this));
 };

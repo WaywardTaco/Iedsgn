@@ -2,7 +2,7 @@
 #include "ActionsHeader.hpp"
 
 Action_FathersAbility::Action_FathersAbility(State* previousState) : Action (
-    previousState, 
+    new State_PatientTurn(), 
     "Suffer for the sake of another!", 
     "Receive 1 Burden, if you do, Heal 2 Burden from any Patient"
 ) {};
