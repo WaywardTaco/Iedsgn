@@ -47,6 +47,7 @@ public:
     unsigned int getPatientCount();
     Teams getWinner();
     unsigned int getMonsterDamage();
+    State* getCurrentState();
 
     void setState(State* newState);
     void setDirector(Director* director);

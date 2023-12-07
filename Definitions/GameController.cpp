@@ -88,6 +88,10 @@ unsigned int GameController::getMonsterDamage(){
     return this->monsterDamage;
 }
 
+State* GameController::getCurrentState(){
+    return this->currentState;
+};
+
 void GameController::setState(State* newState){
     this->currentState = newState;
 };

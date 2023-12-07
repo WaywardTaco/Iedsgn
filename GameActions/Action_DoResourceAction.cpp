@@ -57,6 +57,6 @@ state_beginning:
     };
 };
 
-void Action_DoRoomAction::actionEffects(GameController* game){
+void Action_DoResourceAction::actionEffects(GameController* game){
 
 };
