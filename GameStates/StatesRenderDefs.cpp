@@ -65,6 +65,7 @@ void State_NamingDirector::stateRender(GameController* game){
         << "                      _|                              " << endl           
         << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << endl
+        << "Director's Name: "
         ;
     //cout << "Naming Director:" << endl;
 };
@@ -202,12 +203,13 @@ void State_GameOver::stateRender(GameController* game){
 void State_AskReplay::stateRender(GameController* game){
     system("cls");
     cout << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
-        << "             ___        _                   " << endl
-        << " //\   _ |     |   _    |_)  _  ._  |  _.    " << endl
-        << "//--\ _> |<    |  (_)   | \ (//_ |_) | (_| \// " << endl
-        << "                               |         //  " << endl
+        << " _                   " << endl
+        << "|_)  _  ._  |  _.    " << endl
+        << "| \ (/_ |_) | (_| \/ " << endl
+        << "        |         /  " << endl
         << "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __" << endl
         << endl
+        << "Replay? [0 - Yes | 1 - No]:
         ;
     //cout << "Ask to Replay:" << endl;
 };
