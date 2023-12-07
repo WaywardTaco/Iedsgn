@@ -58,7 +58,7 @@ for (i = 0; i < numPatient; i++) {
 	cout << endl;
 
 	do {
-		if (j = numCharacters - 1) j = 0;
+		if (j == numCharacters - 1) j = 0;
 		else j++;
 
 		//system("CLS");
