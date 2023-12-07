@@ -3,6 +3,8 @@
 #include <iostream>
 #include<conio.h>
 
+using namespace std;
+
 enum State_GameOver::stateOptions : unsigned int {
     proceed
 };
@@ -16,8 +18,8 @@ state_beginning:
     // Pass the winner to the game render
     stateRender(game);
 
-    char input; 
-    std::cout << "Press any key: "; input = _getch();
+    cout << "Press any key: ";
+    int input = _getch();
 
     stateOptions
         choice = static_cast<stateOptions>(input);
