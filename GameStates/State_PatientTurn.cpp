@@ -47,6 +47,10 @@ state_beginning:
             game->setState(new Action_DoResourceAction(this));
             break;
 
+        case move:
+            game->setState(new Action_MovePatient(this));
+            break;
+
         case end_turn:
             game->setState(new Action_DrawCard(this));
             game->nextTurn();

@@ -10,7 +10,5 @@ Player::Player(
 Player::~Player(){};
 
 std::string Player::getName(){
-    return "Temp Player Name";
-    
-    //return this->playerName;
+    return this->playerName;
 };
