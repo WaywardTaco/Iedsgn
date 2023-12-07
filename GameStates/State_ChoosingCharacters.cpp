@@ -20,10 +20,10 @@ State_ChoosingCharacters::~State_ChoosingCharacters(){};
 void State_ChoosingCharacters::stateLogic(GameController* game){
 state_beginning:
 
-vector<Character> charac;
+vector<Character*> charac;
 
 Action* ability = new Action_DebtCollectorsAbility(game->getCurrentState());
-Character character = new Character("Debt Collector", ability);
+Character* character = new Character("Debt Collector", ability);
 charac.push_back(character);
 
 ability = new Action_FathersAbility(game->getCurrentState());
@@ -66,7 +66,7 @@ for (i = 0; i < numPatient; i++) {
 		cout << endl << "Player " << i + 1 << endl;
 		cout << "Play as this character?" << endl;
 		cout << "(Press q to select, otherwise press any key)" << endl << endl;
-		cout << "Character: " << charac[j].getName() << endl;
+		cout << "Character: " << charac[j]->getName() << endl;
 		input = _getch();
 
 	} while (input != 'q' && input != 'Q');
@@ -74,7 +74,7 @@ for (i = 0; i < numPatient; i++) {
 	Patient* patient = new Patient(name, charac[j]);
 	game->pushPatient(patient);
 
-	charac.erase(j);
+	charac.erase(charac.begin() + j);
 }
     
     game->setState(new State_DealingCards());
