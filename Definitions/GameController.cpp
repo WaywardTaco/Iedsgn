@@ -73,7 +73,7 @@ Patient* GameController::getPatient(unsigned int player_number){
 };
 
 Patient* GameController::getTurnPatient(){
-    return this->patients[current_turn];
+    return this->patients[current_turn - 1];
 };
 
 unsigned int GameController::getPatientCount(){
