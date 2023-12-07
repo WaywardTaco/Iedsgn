@@ -51,3 +51,7 @@ bool Patient::hasDoneAction(){
 Character* Patient::getCharacter(){
     return this->chosenCharacter;
 }
+
+unsigned int Patient::getBurden(){
+    return this->burdenCount;
+}

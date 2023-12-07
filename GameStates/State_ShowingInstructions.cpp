@@ -4,7 +4,7 @@
 #include <iostream>
 
 enum State_ShowingInstructions::stateOptions : unsigned int {
-    back_to_main, show_detailed
+    back_to_main = 1, show_detailed = 2
 };
 
 State_ShowingInstructions::State_ShowingInstructions(){};

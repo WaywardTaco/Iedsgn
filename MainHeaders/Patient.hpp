@@ -28,6 +28,7 @@ public:
     Character* getCharacter();
     bool isAlive();
     bool hasDoneAction();
+    unsigned int getBurden();
 };
 
 #endif
