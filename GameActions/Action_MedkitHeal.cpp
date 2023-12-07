@@ -2,7 +2,7 @@
 #include "ActionsHeader.hpp"
 
 Action_MedkitHeal::Action_MedkitHeal(State* previousState) : Action (
-    previousState, 
+    new State_PatientTurn(), 
     "Use [ONE MEDKIT] to Heal 1 Burden", 
     ""
 ) {};

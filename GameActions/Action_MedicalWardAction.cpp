@@ -2,7 +2,7 @@
 #include "ActionsHeader.hpp"
 
 Action_MedicalWardAction::Action_MedicalWardAction(State* previousState) : Action (
-    previousState, 
+    new State_PatientTurn(), 
     "Medical Ward: Heal 2 Burden", 
     "(You must be in the Medical Ward to use this Action)"
 ) {};

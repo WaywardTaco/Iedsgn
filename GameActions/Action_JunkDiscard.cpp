@@ -2,7 +2,7 @@
 #include "ActionsHeader.hpp"
 
 Action_JunkDiscard::Action_JunkDiscard(State* previousState) : Action (
-    previousState, 
+    new State_PatientTurn(), 
     "Use [ONE JUNK] to discard the top card of the deck", 
     ""
 ) {};

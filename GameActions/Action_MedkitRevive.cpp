@@ -2,7 +2,7 @@
 #include "ActionsHeader.hpp"
 
 Action_MedkitRevive::Action_MedkitRevive(State* previousState) : Action (
-    previousState, 
+    new State_PatientTurn(), 
     "Use [TWO MEDKITS] to Revive any eliminated Patient to 3 Burden", 
     "(That Player returns to the game with no cards in hand)"
 ) {};
