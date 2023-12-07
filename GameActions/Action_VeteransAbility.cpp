@@ -2,7 +2,7 @@
 #include "ActionsHeader.hpp"
 
 Action_VeteransAbility::Action_VeteransAbility(State* previousState) : Action (
-    previousState, 
+    new State_PatientTurn(), 
     "Use battle tested techniques to fight a monster!", 
     "Choose a monster to attack you, you do not get Burden from this"
 ) {};

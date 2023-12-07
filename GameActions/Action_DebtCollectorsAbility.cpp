@@ -2,7 +2,7 @@
 #include "ActionsHeader.hpp"
 
 Action_DebtCollectorsAbility::Action_DebtCollectorsAbility(State* previousState) : Action (
-    previousState, 
+    new State_PatientTurn(), 
     "Survive and beg for the aid of others!", 
     "Choose another Patient and they have to give you at least one resource if able"
 ) {};
