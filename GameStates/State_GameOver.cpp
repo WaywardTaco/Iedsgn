@@ -19,7 +19,7 @@ state_beginning:
     stateRender(game);
 
     cout << "Press any key: ";
-    int input = getch();
+    int input = _getch();
 
     stateOptions
         choice = static_cast<stateOptions>(input);
