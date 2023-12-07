@@ -3,7 +3,7 @@
 #include <iostream>
 
 enum State_GameOver::stateOptions : unsigned int {
-    proceed
+    proceed = 1
 };
 
 State_GameOver::State_GameOver(){};
