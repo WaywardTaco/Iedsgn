@@ -17,6 +17,7 @@ State_PatientTurn::~State_PatientTurn(){};
 void State_PatientTurn::stateLogic(GameController* game){
 state_beginning:
     Patient* owner = game->getTurnPatient();
+    Action_ExtraAction extra(this);
 
     if(!owner->isAlive()){
         game->nextTurn();
@@ -36,22 +37,19 @@ state_beginning:
     switch(choice){
         case take_character_action:
             if(owner->hasDoneAction()){
-                Action_ExtraAction extra(this);
+                extra.actionEffects(game);
             }
             game->setState(owner->getCharacter()->getAbility());
             break;
 
         case take_room_action:
             if(owner->hasDoneAction()){
-                Action_ExtraAction extra(this);
+                extra.actionEffects(game);
             }
             game->setState(new Action_DoRoomAction(this));
             break;
 
         case take_resource_action:
-            if(owner->hasDoneAction()){
-                Action_ExtraAction extra(this);
-            }
             game->setState(new Action_DoResourceAction(this));
             break;
 

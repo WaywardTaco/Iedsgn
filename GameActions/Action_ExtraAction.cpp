@@ -10,12 +10,7 @@ Action_ExtraAction::Action_ExtraAction(State* previousState) : Action (
 Action_ExtraAction::~Action_ExtraAction(){};
 
 void Action_ExtraAction::actionEffects(GameController* game){
-    Action_TargetPatient* targeting = new Action_TargetPatient(this);
-
-    game->setState(targeting);
-    game->runState();
-
-    Patient* target = targeting->getSelected();
+    Patient* target = game->getTurnPatient();
 
     target->giveBurden(1);
 };

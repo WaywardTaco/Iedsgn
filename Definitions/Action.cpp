@@ -51,6 +51,7 @@ state_beginning:
             game->setState(previousState);
             break;
         case finished_action:
+            game->getTurnPatient()->setDoneAction(true);
             actionEffects(game);
             game->setState(previousState);
             break;
